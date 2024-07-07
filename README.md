@@ -23,7 +23,7 @@ CSV Files are downloaded at a background task with Celery.
 Task downloads a CSV file from a provided link, processes it in chunks, parses date fields, and stores each row of data. Updates the upload status of the associated file upon completion or failure.
 
 
-![alt text](<screenshots/upload-csv.png>)
+![alt text](<screenshots/upload-csv-response.png>)
 
 
 
