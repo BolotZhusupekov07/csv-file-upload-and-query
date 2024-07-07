@@ -10,7 +10,11 @@ class CityFilter(django_filters.FilterSet):
         field_name="description", lookup_expr="icontains"
     )
     population = django_filters.CharFilter(field_name="population")
-    established_at = django_filters.DateFromToRangeFilter(
+    population_range = django_filters.RangeFilter(field_name="population")
+    established = django_filters.DateFromToRangeFilter(
         field_name="established_at",
-        label="use established_at_after and established_at_before",
+        label="use established_after and established_before",
+    )
+    established_at = django_filters.DateFilter(
+        field_name="established_at"
     )
